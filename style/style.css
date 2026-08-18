@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root{
+    --cor0:#071A2B;
+    --cor01:#0B6EBD;
+    --cor02:#19D3E6;
+    --cor03:#6C4AB6;
+    --cor04:#EAF4F7;
+    --cor05:#172B3A;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Orbitron', sans-serif;
+    --font-02: 'Space Grotesk', sans-serif;
+    --font03: 'Rajdhani', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     background-color: var(--cor04);
+    font-family: var(--font-padrao);
+}
+
+header{
+    background-color: var(--cor05);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header > h1 {
+    color:white;
+    font-family: var(--font-destaque);
+    font-size: 4em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.253);
+
+}
+
+header > p {
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    padding-bottom: 50px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+main {
+    background-color: var(--cor0);
+}
+
+/* SEÇÕES */
+
+section {
+    min-height: 100vh;
+    padding: 80px 8%;
+}
+
+
+/* HERO */
+
+.hero {
+    position: relative;
+    min-height: calc(100vh - 150px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 0;
+}
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(7, 26, 43, 0.65);
+
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 800px;
+
+    color: white;
+}
+
+.hero-content h2 {
+    font-family: var(--font-destaque);
+    font-size: 3.5em;
+
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-family: var(--font-02);
+
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+.hero-content span {
+    display: block;
+
+    margin-top: 50px;
+
+    color: var(--cor02);
+
+    font-family: var(--font03);
+    font-size: 1.1em;
+}
+
+
+/* BASES DO DNA */
+
+.bases {
+    display: flex;
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 40px;
+}
+
+.base {
+    width: 130px;
+    height: 130px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(25, 211, 230, 0.1);
+
+    border: 1px solid var(--cor02);
+
+    border-radius: 15px;
+
+    color: white;
+}
+
+.base strong {
+    font-family: var(--font-destaque);
+
+    font-size: 3em;
+
+    color: var(--cor02);
+}
+
+.base span {
+    font-family: var(--font03);
+
+    font-size: 1.1em;
+}
+
+/* =========================
+   ESTILO GERAL DAS SEÇÕES
+========================= */
+
+section:not(.hero) {
+    min-height: 100vh;
+    padding: 80px 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section h2 {
+    color: white;
+
+    font-family: var(--font-destaque);
+    font-size: 2.5em;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+section p {
+    color: var(--cor04);
+
+    font-family: var(--font-02);
+    font-size: 1.15em;
+
+    line-height: 1.7;
+
+    max-width: 900px;
+
+    margin: 0 auto 20px;
+}
+
+section h3 {
+    color: var(--cor02);
+
+    font-family: var(--font03);
+}
+
+.sobre {
+    background: linear-gradient(
+        135deg,
+        var(--cor0),
+        var(--cor05)
+    );
+}
+
+.sequenciamento {
+    background: linear-gradient(
+        135deg,
+        #081f33,
+        var(--cor01)
+    );
+}
+
+.timeline {
+    max-width: 1000px;
+
+    width: 100%;
+
+    margin: 40px auto 0;
+
+    display: flex;
+
+    gap: 25px;
+}
+
+.timeline div {
+    flex: 1;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background: rgba(7, 26, 43, 0.7);
+
+    border: 1px solid rgba(25, 211, 230, 0.5);
+
+    border-radius: 15px;
+}
+
+.timeline strong {
+    display: block;
+
+    color: var(--cor02);
+
+    font-family: var(--font-destaque);
+
+    font-size: 2em;
+
+    margin-bottom: 15px;
+}
+
+.timeline p {
+    font-size: 1em;
+}
+
+.dados {
+    background-color: var(--cor05);
+}
+
+.fluxo {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    margin-top: 40px;
+}
+
+.fluxo span {
+    padding: 20px 30px;
+
+    color: white;
+
+    font-family: var(--font-destaque);
+
+    background: rgba(108, 74, 182, 0.3);
+
+    border: 1px solid var(--cor03);
+
+    border-radius: 10px;
+}
+
+.finalidades {
+    background: linear-gradient(
+        135deg,
+        var(--cor0),
+        #102f45
+    );
+}
+
+.cards {
+    max-width: 1100px;
+
+    width: 100%;
+
+    margin: 30px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.cards article {
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border: 1px solid rgba(25, 211, 230, 0.25);
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.cards article:hover {
+    transform: translateY(-8px);
+
+    border-color: var(--cor02);
+
+    background: rgba(25, 211, 230, 0.08);
+}
+
+.cards h3 {
+    color: var(--cor02);
+
+    font-family: var(--font03);
+
+    font-size: 1.4em;
+
+    margin-bottom: 15px;
+}
+
+.cards p {
+    font-size: 1em;
+
+    margin: 0;
+}
+
+.conclusao {
+    background: linear-gradient(
+        135deg,
+        var(--cor03),
+        var(--cor0)
+    );
+}
+
+.conclusao p {
+    text-align: center;
+
+    max-width: 850px;
+}
+
+footer {
+    padding: 30px;
+
+    text-align: center;
+
+    background: #050f18;
+
+    color: var(--cor04);
+
+    font-family: var(--font03);
+}
+
+footer p {
+    color: var(--cor04);
+}
+
+/* =========================
+   RESPONSIVIDADE - MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* BODY */
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* HEADER */
+
+    header {
+        min-height: 100px;
+        height: 100px;
+
+        padding: 20px 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header > h1 {
+        font-size: 2em;
+        margin: 0;
+    }
+
+
+    /* SEÇÕES */
+
+    section:not(.hero) {
+        min-height: 100vh;
+
+        padding: 60px 20px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: calc(100vh - 100px);
+
+        padding: 30px 20px;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.2em;
+
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 1.05em;
+
+        line-height: 1.5;
+    }
+
+    .hero-content span {
+        margin-top: 40px;
+
+        font-size: 1em;
+    }
+
+
+    /* TÍTULOS DAS SEÇÕES */
+
+    section h2 {
+        font-size: 1.8em;
+
+        line-height: 1.3;
+
+        margin-bottom: 25px;
+    }
+
+
+    /* PARÁGRAFOS */
+
+    section p {
+        font-size: 1em;
+
+        line-height: 1.6;
+    }
+
+
+    /* BASES A T C G */
+
+    .bases {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+
+        margin-top: 30px;
+    }
+
+    .base {
+        width: 100%;
+        height: 120px;
+    }
+
+    .base strong {
+        font-size: 2.5em;
+    }
+
+    .base span {
+        font-size: 1em;
+    }
+
+
+    /* TIMELINE */
+
+    .timeline {
+        flex-direction: column;
+
+        gap: 20px;
+
+        margin-top: 30px;
+    }
+
+    .timeline div {
+        width: 100%;
+
+        padding: 25px;
+    }
+
+
+    /* DNA → DADOS */
+
+    .fluxo {
+        flex-direction: column;
+
+        gap: 10px;
+
+        margin-top: 30px;
+    }
+
+    .fluxo span {
+        width: 100%;
+
+        max-width: 280px;
+
+        text-align: center;
+
+        padding: 15px;
+    }
+
+
+    /* CARDS */
+
+    .cards {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        margin-top: 20px;
+    }
+
+    .cards article {
+        padding: 25px;
+    }
+
+
+    /* CONCLUSÃO */
+
+    .conclusao p {
+        font-size: 1em;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 25px 15px;
+    }
+
+}

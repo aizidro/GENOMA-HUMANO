@@ -1,0 +1,29 @@
+GENOMA HUMANO
+POR: ANDRE, FELIPE, DANIEL E DAVI
+FONTE: CHAT GPT : BUSCAR MAIS FONTES
+
+Como os cientistas sequenciaram o genoma humano?
+
+O genoma humano é todo o conjunto de informações genéticas presentes no DNA de uma pessoa. O DNA é formado por quatro bases principais:
+
+A = Adenina
+T = Timina
+C = Citosina
+G = Guanina
+O objetivo não era apenas descobrir a sequência do DNA, mas transformar essa 
+enorme quantidade de informação genética em dados que pudessem ser armazenados, comparados, pesquisados e analisados por computadores.
+
+Podemos dividir as finalidades em alguns pontos:
+
+Identificar os genes humanos
+Descobrir onde estão os genes e compreender melhor suas funções.
+Entender doenças genéticas
+Comparar sequências de DNA e identificar alterações que podem estar relacionadas a determinadas doenças.
+Melhorar o diagnóstico
+O conhecimento do genoma permite desenvolver métodos para identificar determinadas alterações genéticas.
+Desenvolver tratamentos e medicamentos
+Conhecer os mecanismos genéticos das doenças ajuda pesquisadores a desenvolver tratamentos mais direcionados.
+Compreender o funcionamento do corpo humano
+O DNA contém instruções relacionadas ao desenvolvimento e funcionamento das células e do organismo.
+Criar uma referência para pesquisas futuras
+A sequência do genoma funciona como uma grande "base de referência" que pode ser comparada com outras sequências.
